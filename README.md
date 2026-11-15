@@ -26,11 +26,3 @@ A clean, responsive expense tracking app built with Flutter as part of my Flutte
 3. **Collections & Formatting:** `Map`, `for` loops, `.map()`, spread operator (`...`), getters, and date formatting
 4. **User Input & Validation:** `TextEditingController` (with `dispose()`), `DropdownButton`, `.trim()`, and `double.tryParse()`
 5. **Async & State:** `Future` / `async` with `showDatePicker`, lifting state up via callback functions, and `ThemeData`
-
-## Getting Started
-
-```bash
-git clone [https://github.com/PhyoeThantKo/expense-tracker-app.git]([https://github.com/your-username/expense-tracker](https://github.com/PhyoeThantKo/expense-tracker-app).git)
-cd expense-tracker
-flutter pub get
-flutter run

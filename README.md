@@ -1,17 +1,28 @@
-# expense_tracker
+# Expense Tracker
 
-A new Flutter project.
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white)
+![Material 3](https://img.shields.io/badge/Material%203-757575?style=flat&logo=materialdesign&logoColor=white)
 
-## Getting Started
+A clean, responsive expense tracking app built with Flutter as part of my Flutter development course.
 
-This project is a starting point for a Flutter application.
+## Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+| Light Mode | Dark Mode | Add Expense |
+| :---: | :---: | :---: |
+| <img src="screenshots/light.png" width="250"> | <img src="screenshots/dark.png" width="250"> | <img src="screenshots/modal.png" width="250"> |
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Add, view, and swipe-to-dismiss expenses with undo support (`SnackBar`)
+- Category-based expense breakdown bar chart
+- Automatic light and dark theme adaptation
+- Input validation and native date picker
+
+## What I Learned
+
+1. **App Structure & UI:** `AppBar`, `ListView`, `Expanded`, `Card`, and `showModalBottomSheet`
+2. **Data Modeling:** Custom `Expense` & `ExpenseBucket` classes, `uuid`, initializer lists, and `enum`
+3. **Collections & Formatting:** `Map`, `for` loops, `.map()`, spread operator (`...`), getters, and date formatting
+4. **User Input & Validation:** `TextEditingController` (with `dispose()`), `DropdownButton`, `.trim()`, and `double.tryParse()`
+5. **Async & State:** `Future` / `async` with `showDatePicker`, lifting state up via callback functions, and `ThemeData`

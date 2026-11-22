@@ -8,16 +8,23 @@ A clean, responsive expense tracking app built with Flutter as part of my Flutte
 
 ## Screenshots
 
+### Portrait
 | Light Mode | Dark Mode | Add Expense |
 | :---: | :---: | :---: |
 | <img src="screenshots/light.png" width="250"> | <img src="screenshots/dark.png" width="250"> | <img src="screenshots/modal.png" width="250"> |
+
+### Landscape
+| Dashboard (Landscape) | Add Expense (Landscape) |
+| :---: | :---: |
+| <img src="screenshots/landscape_home.png" width="400"> | <img src="screenshots/landscape_modal.png" width="400"> |
 
 ## Features
 
 - Add, view, and swipe-to-dismiss expenses with undo support (`SnackBar`)
 - Category-based expense breakdown bar chart
 - Automatic light and dark theme adaptation
-- Input validation and native date picker
+- Input validation with platform-adaptive error dialogs (iOS `CupertinoAlertDialog` & Android `AlertDialog`)
+- Responsive portrait and landscape layouts with keyboard and safe-area handling
 
 ## What I Learned
 
@@ -26,3 +33,4 @@ A clean, responsive expense tracking app built with Flutter as part of my Flutte
 3. **Collections & Formatting:** `Map`, `for` loops, `.map()`, spread operator (`...`), getters, and date formatting
 4. **User Input & Validation:** `TextEditingController` (with `dispose()`), `DropdownButton`, `.trim()`, and `double.tryParse()`
 5. **Async & State:** `Future` / `async` with `showDatePicker`, lifting state up via callback functions, and `ThemeData`
+6. **Responsive & Adaptive UI:** Dynamic `Row`/`Column` switching via `MediaQuery` screen width, `LayoutBuilder` constraints, `viewInsets` keyboard-overlap prevention with `SafeArea`, orientation locking (`SystemChrome.setPreferredOrientations`), and platform-adaptive widgets (`Platform.isIOS` / `.adaptive`)
